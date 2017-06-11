@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>JSKhanFramework</title>
+	<link rel="shootcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="home col-12" style="flex-direction: column">
+				<div class="row">
+					<div class="col-2">
+						<img src="img/logo.png" alt="Logo" class="animated fadeInDown" style="width:60px;height:60px;margin-top:25px;margin-left:25px">
+					</div>
+					<!-- MENU -->
+					<div class="col-10 menu">
+						<header>
+				  		<nav>
+							<ul>
+								<li><a>Guia</a></li>
+								<li><a>API</a></li>
+								<li><a>Exemplos</a></li>
+								<li><a>Social</a></li>
+								<li><a>Traduções</a></li>
+								<li><a>Ajudar</a></li>
+							</ul>
+				  		</nav>
+			 			</header>
+					</div>
+					<!-- / MENU -->
+				</div>
+
+				<div class="row" style="height: 100%">
+					<div class="col-12 btns-home">
+						<a href="https://github.com/PaulaoDeveloper/JSKhanFramework/" target="__blank">
+							<button class="hvr-grow animated GitBtn">
+								Documentation For Github
+								<i class="fa fa-github" aria-hidden="true"></i>
+							</button>
+						</a>
+						<a href="https://github.com/PaulaoDeveloper/JSKhanFramework/archive/master.zip" target="__blank">
+							<button class="hvr-grow animated">
+								Download Framework
+								<i class="fa fa-cloud-download" aria-hidden="true"></i>
+							</button>
+						</a>
+						<!-- TOOLTIP GIT -->
+						<div class="col-7 tooltipGit">
+
+							<div class="arrow-up"></div>
+							<div class="divArrow">
+
+								<div class="btn-git-align">
+									<a class="github-button" href="https://github.com/PaulaoDeveloper" data-size="large" data-show-count="true" aria-label="Follow @PaulaoDeveloper on GitHub">Follow @PaulaoDeveloper</a>
+								</div>
+
+								<div class="btn-git-align">
+									<a class="github-button" href="https://github.com/PaulaoDeveloper/JSKhanFramework/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch PaulaoDeveloper/JSKhanFramework on GitHub">Watch</a>
+								</div>
+	
+								<div class="btn-git-align">
+									<a class="github-button" href="https://github.com/PaulaoDeveloper/JSKhanFramework" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star PaulaoDeveloper/JSKhanFramework on GitHub">Star</a>
+								</div>
+
+								<div class="btn-git-align">
+									<a class="github-button" href="https://github.com/PaulaoDeveloper/JSKhanFramework/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork PaulaoDeveloper/JSKhanFramework on GitHub">Fork</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+
+		<!-- <div class="row">
+			<div class="col-12 github-awesomes" style="height: 100vh">
+					
+				
+
+			</div>
+		</div> -->
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+	<script>
+		$(".tooltipGit").hide();
+		$(".btns-home>a>button").click(function(){
+			$(".tooltipGit").css("display", "flex");
+			$(".tooltipGit").addClass("animated slideInUp");
+		});
+		$(".btns-home>a>button").mouseleave(function(){
+			$(this).removeClass("rubberBand");
+		});
+		$(".btns-home>a>button").mouseover(function(){
+			$(this).addClass("rubberBand");
+		});
+	</script>
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>
